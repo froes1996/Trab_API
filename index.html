@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas à API do BrasilAPI</title>
+    <LINK rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <h1>Consultas à API do BrasilAPI</h1>
+
+    <section id="automatic-consults">
+        <h2>Consultas Automáticas</h2>
+        <div id="bank-info">
+            <h3>Informações de um Banco</h3>
+            <p id="bank-result">Carregando...</p>
+        </div>
+        <div id="cep-info">
+            <h3>Informações de um CEP</h3>
+            <p id="cep-result">Carregando...</p>
+        </div>
+    </section>
+
+    <section id="user-consults">
+        <h2>Consultas Personalizadas</h2>
+
+        <div id="cnpj-consult">
+            <h3>Consultar CNPJ</h3>
+            <form id="cnpj-form">
+                <label for="cnpj">Digite um CNPJ:</label>
+                <input type="text" id="cnpj" name="cnpj" required>
+                <button type="submit">Consultar</button>
+            </form>
+            <p id="cnpj-result">Resultado aparecerá aqui</p>
+        </div>
+
+        <div id="ddd-consult">
+            <h3>Consultar DDD</h3>
+            <form id="ddd-form">
+                <label for="ddd">Digite um DDD:</label>
+                <input type="text" id="ddd" name="ddd" required>
+                <button type="submit">Consultar</button>
+            </form>
+            <p id="ddd-result">Resultado aparecerá aqui</p>
+        </div>
+    </section>
+
+        <h1>Exercícios com Promise.race e Promise.all</h1>
+        
+        <button id="race-btn">Consultar com Promise.race:</button>
+        <p id="race-result">Resultado aparecerá aqui</p>
+        
+        <button id="all-btn">Consultar com Promise.all:</button>
+        <p id="all-result">Resultado aparecerá aqui</p>
+
+<script src="script.js"></script>
+</body>
+
+</html>
